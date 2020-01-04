@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    * {
+        box-sizing: border-box;
+    }
+    #header{
+          height:110px;
+          padding: 20px 0;
+          position:fixed;
+          left: 0;
+          top: 0;
+          right: 0;
+          z-index:998;
+          margin:0 100px 0 100px;
+
+    }
+    #topbar{
+          padding:0 0 10px 0;
+
+
+    }
+    #social_links{
+          text-align:right;
+    }
+
+    .scroll {
+          text-decoration:none;
+          color:rebeccapurple;
+    }
+    nav {
+          overflow:hidden;
+    }
+    .div  {
+          text-decoration:none;
+          text-align:center;
+          display:inline-block;
+          float:left;
+          width:10%;
+          margin-left:50px;
+    }
+
+    .div a{
+          text-decoration: none;
+          color:black;
+    }
+
+    .wrap {
+          width:100%;
+          padding-right:15px;
+          padding-left:15px;
+          margin-left:auto;
+          margin-right:auto;
+
+    }
+    #services {
+          background-color: #f5f8fd;
+    }
+    .services_header h2 {
+          text-align:center;
+          position: relative;
+    }
+
+    .services_header p {
+          text-align: center;
+          margin: auto;
+          padding-bottom:60px;
+          width:50%;
+
+    }
+
+    .row {
+          display:flex;
+          flex-wrap:wrap;
+          margin-left:50px;
+          margin-right:50px;
+    }
+
+    .bounce {
+          position:relative;
+          width: 26%;
+          float: left;
+          padding-right:15px;
+          padding-left:15px;
+          margin:0 auto;
+    }
+
+    .box {
+          padding:30px;
+          position:relative;
+          overflow:hidden;
+          border-radius: 10px;
+          margin: 0 10px 40px 10px;
+          background:white;
+
+    }
+    .box >h3 {
+          text-align:center;
+
+    }
+
+    .box > .icon {
+          width:60px;
+          height:60px;
+          border-radius:50%;
+          background-color: pink;
+    }
+
+    .icon {margin-left:36%;}
+
+    .title a {
+          text-decoration:none;
+          color:black;
+
+    }
+
+
+    .volu{
+          overflow:hidden;
+          margin:0 auto;
+          width:80%;
+    }
+
+
+    .girl {
+          width: 50%;
+          float:left;
+          visibility:visible;
+          animation-name: fadeInUP;
+          padding-left:15px;
+          padding-right:15px;
+    }
+    .smartphone {
+          width: 50%;
+          float:left;
+          padding-left:15px;
+          padding-right:15px;
+    }
+    .neque {
+          width: 50%;
+          float: left;
+          padding-left:15px;
+          padding-right:15px;
+    }
+    .volup{
+          width:50%;
+          float:left;
+          padding-left:15px;
+          padding-right:15px;
+    }
+
+
+    .pooka{
+          max-width:100%;
+          height:auto;
+    }
+    .low {
+          overflow:hidden;
+          margin:10px auto;
+          width:80%;
+    }
+    .iphone{
+          max-width:100%;
+          height:auto;
+    }
+    .volu < div {
+              display:inline-block;
+            }
+    #footer .copy {
+          text-align:center;
+          padding-top:30px;
+          font-size:15px;
+    }
+    #footer .design{
+          text-align:center;
+          padding-top:4px;
+    }
+    .back_to_top{
+          position:fixed;
+          display:inline;
+          background: deepskyblue;
+          color: white;
+          width:44px;
+          height:44px;
+          text-align:center;
+          line-height:1;
+          border-radius:50%;
+          z-index:991;
+          right: 15px;
+          bottom: 15px;
+          font-size:2.0em;
+          text-decoration: none;
+          line-height:2;
+    }
+
+  </style>
+
+</head>
+<body>
+<header id="header">
+  <div id="topbar">
+    <div id="wrap">
+      <div id="social_links">
+        <a href="" class="twitter">t</a>
+        <a href="" class="facebook">f</a>
+        <a href="" class="linkedin">l</a>
+        <a href="" class="instagram">i</a>
+      </div>
+    </div>
+  </div>
+  <div class="contain">
+    <div>
+      <h1>
+        <a href="#" class="scroll">
+          <span>RAPID</span>
+        </a>
+      </h1>
+    </div>
+
+    <nav>
+      <div class="div"><a href="">Home</a></div>
+      <div class="div"><a href="">About Us</a></div>
+      <div class="div"><a href="#services">Services</a></div>
+      <div class="div"><a href="">PORTFOLIO</a></div>
+      <div class="div"><a href=""></a>TEAM</div>
+      <div class="div">
+        DROP DOWN<select>
+      <option>drop down1</option>
+      <option>drop down2</option>
+      <option>drop down3</option>
+      </select></div>
+      <div class="div"><a href=""></a>CONTACT US</div>
+
+    </nav>
+
+  </div>
+
+
+
+
+
+</header>
+
+
+
+<section id="services">
+  <div class="wrap">
+    <header class="services_header">
+      <h2>Services</h2>
+      <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus.</p>
+    </header>
+    <div class="row">
+      <div class="bounce">
+        <div class="box">
+          <div class="icon">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHsAAAB7CAMAAABjGQ9NAAAAZlBMVEX///8AAADj4+OPj483Nzfu7u76+vr39/fExMQ0NDTY2Nje3t4qKioYGBhubm6urq68vLx1dXWdnZ2VlZVRUVE+Pj4lJSWIiIhKSkpoaGjQ0NCCgoJgYGAvLy+0tLRYWFgNDQ0eHh5NxlUvAAACbElEQVRoge2Y23arIBBAlYoa4yXmVq+x/v9PVhsGJRFoeoCe1TX7MbJmZwYYQc9DEARBEARBEARBEOS/JSJJkuypcy+N2+GSjll2Daq8IKE7c1x++AJd4ch+CPwNjg6KT/It80QQ21bfJOaZNrJpDt8V6il1m3WX1duBXFR/VHWZD6nwW2ZLflpJ+rah0bSxIkqO1er3ys6cxyuFuKPiy/Lk3YY6WuLnT8kVS7M5WHC/LUlvPG1GeHo1r95z9W37+VX11/4NvsZPkgEJT9z0WicZizxI3xpHdWF+Dg9M5GPOsM8MuwcWt1WMaaDBJEbVIaStChtBkzG7zaCvXJSjYGJyo26IKlvkd2Cp90bdJYvaqIfBzBh1w+7eq4elNtz1Peao2GEzsNiMdpeOtSyN+2zDzfLONDWHd6nRlzjMt6ZrQOM1qfZaFlRzDrayzgsWtFSO+l4HehV4e6sPBnCCfjPqDuFMpGrVFLa34RsKNLZOMQYmJtXsxFc5+NrE6ciG1GbVXtizwDtpUjX8PU3Tfx1+MThLBkDFLVwPKL91d5ux+aHK9Eqb4Xn53XO7Dhd1al69vCimW+Djgks6f0F9vvgZpF/iV/GSe5iUvoDZ1nJnfRn0q/Y2v9RofOr8R6zLVdgou+pry9/OnD7PrrvMwyLblpXJxbrco8cNezmdpoj4wdFG2afcD/luJRkH9vmF7gS5lcwnSFOU56DfVfUp3vMr+UPmtuTbUBdll0EcLDi5XJxzG1+85IgLrnDqFsqeGT426uXBb6XtrcruXs0zd7vFgK99/htZz5C61NzVEQRBEARBEARBEAT5+3wCxFIVE6n7UysAAAAASUVORK5CYII=" height="50px">
+          </div>
+          <h3 class="title"><a href>Lorem Ipsum</a></h3>
+          <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi
+            sint occaecati cupiditate non provident</p>
+        </div>
+      </div>
+      <div class="bounce">
+        <div class="box">
+          <div class="icon">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHsAAAB7CAMAAABjGQ9NAAAAZlBMVEX///8AAADj4+OPj483Nzfu7u76+vr39/fExMQ0NDTY2Nje3t4qKioYGBhubm6urq68vLx1dXWdnZ2VlZVRUVE+Pj4lJSWIiIhKSkpoaGjQ0NCCgoJgYGAvLy+0tLRYWFgNDQ0eHh5NxlUvAAACbElEQVRoge2Y23arIBBAlYoa4yXmVq+x/v9PVhsGJRFoeoCe1TX7MbJmZwYYQc9DEARBEARBEARBEOS/JSJJkuypcy+N2+GSjll2Daq8IKE7c1x++AJd4ch+CPwNjg6KT/It80QQ21bfJOaZNrJpDt8V6il1m3WX1duBXFR/VHWZD6nwW2ZLflpJ+rah0bSxIkqO1er3ys6cxyuFuKPiy/Lk3YY6WuLnT8kVS7M5WHC/LUlvPG1GeHo1r95z9W37+VX11/4NvsZPkgEJT9z0WicZizxI3xpHdWF+Dg9M5GPOsM8MuwcWt1WMaaDBJEbVIaStChtBkzG7zaCvXJSjYGJyo26IKlvkd2Cp90bdJYvaqIfBzBh1w+7eq4elNtz1Peao2GEzsNiMdpeOtSyN+2zDzfLONDWHd6nRlzjMt6ZrQOM1qfZaFlRzDrayzgsWtFSO+l4HehV4e6sPBnCCfjPqDuFMpGrVFLa34RsKNLZOMQYmJtXsxFc5+NrE6ciG1GbVXtizwDtpUjX8PU3Tfx1+MThLBkDFLVwPKL91d5ux+aHK9Eqb4Xn53XO7Dhd1al69vCimW+Djgks6f0F9vvgZpF/iV/GSe5iUvoDZ1nJnfRn0q/Y2v9RofOr8R6zLVdgou+pry9/OnD7PrrvMwyLblpXJxbrco8cNezmdpoj4wdFG2afcD/luJRkH9vmF7gS5lcwnSFOU56DfVfUp3vMr+UPmtuTbUBdll0EcLDi5XJxzG1+85IgLrnDqFsqeGT426uXBb6XtrcruXs0zd7vFgK99/htZz5C61NzVEQRBEARBEARBEAT5+3wCxFIVE6n7UysAAAAASUVORK5CYII=" height="50px">
+          </div>
+          <h3 class="title"><a href>Dolor Sitema</a></h3>
+          <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi
+            sint occaecati cupiditate non provident</p>
+        </div>
+      </div>
+      <div class="bounce">
+        <div class="box">
+          <div class="icon">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHsAAAB7CAMAAABjGQ9NAAAAZlBMVEX///8AAADj4+OPj483Nzfu7u76+vr39/fExMQ0NDTY2Nje3t4qKioYGBhubm6urq68vLx1dXWdnZ2VlZVRUVE+Pj4lJSWIiIhKSkpoaGjQ0NCCgoJgYGAvLy+0tLRYWFgNDQ0eHh5NxlUvAAACbElEQVRoge2Y23arIBBAlYoa4yXmVq+x/v9PVhsGJRFoeoCe1TX7MbJmZwYYQc9DEARBEARBEARBEOS/JSJJkuypcy+N2+GSjll2Daq8IKE7c1x++AJd4ch+CPwNjg6KT/It80QQ21bfJOaZNrJpDt8V6il1m3WX1duBXFR/VHWZD6nwW2ZLflpJ+rah0bSxIkqO1er3ys6cxyuFuKPiy/Lk3YY6WuLnT8kVS7M5WHC/LUlvPG1GeHo1r95z9W37+VX11/4NvsZPkgEJT9z0WicZizxI3xpHdWF+Dg9M5GPOsM8MuwcWt1WMaaDBJEbVIaStChtBkzG7zaCvXJSjYGJyo26IKlvkd2Cp90bdJYvaqIfBzBh1w+7eq4elNtz1Peao2GEzsNiMdpeOtSyN+2zDzfLONDWHd6nRlzjMt6ZrQOM1qfZaFlRzDrayzgsWtFSO+l4HehV4e6sPBnCCfjPqDuFMpGrVFLa34RsKNLZOMQYmJtXsxFc5+NrE6ciG1GbVXtizwDtpUjX8PU3Tfx1+MThLBkDFLVwPKL91d5ux+aHK9Eqb4Xn53XO7Dhd1al69vCimW+Djgks6f0F9vvgZpF/iV/GSe5iUvoDZ1nJnfRn0q/Y2v9RofOr8R6zLVdgou+pry9/OnD7PrrvMwyLblpXJxbrco8cNezmdpoj4wdFG2afcD/luJRkH9vmF7gS5lcwnSFOU56DfVfUp3vMr+UPmtuTbUBdll0EcLDi5XJxzG1+85IgLrnDqFsqeGT426uXBb6XtrcruXs0zd7vFgK99/htZz5C61NzVEQRBEARBEARBEAT5+3wCxFIVE6n7UysAAAAASUVORK5CYII=" height="50px">
+          </div>
+          <h3 class="title"><a href>Sed ut perspiciatis</a></h3>
+          <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi
+            sint occaecati cupiditate non provident</p>
+        </div>
+      </div>
+      <div class="bounce">
+        <div class="box">
+          <div class="icon">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHsAAAB7CAMAAABjGQ9NAAAAZlBMVEX///8AAADj4+OPj483Nzfu7u76+vr39/fExMQ0NDTY2Nje3t4qKioYGBhubm6urq68vLx1dXWdnZ2VlZVRUVE+Pj4lJSWIiIhKSkpoaGjQ0NCCgoJgYGAvLy+0tLRYWFgNDQ0eHh5NxlUvAAACbElEQVRoge2Y23arIBBAlYoa4yXmVq+x/v9PVhsGJRFoeoCe1TX7MbJmZwYYQc9DEARBEARBEARBEOS/JSJJkuypcy+N2+GSjll2Daq8IKE7c1x++AJd4ch+CPwNjg6KT/It80QQ21bfJOaZNrJpDt8V6il1m3WX1duBXFR/VHWZD6nwW2ZLflpJ+rah0bSxIkqO1er3ys6cxyuFuKPiy/Lk3YY6WuLnT8kVS7M5WHC/LUlvPG1GeHo1r95z9W37+VX11/4NvsZPkgEJT9z0WicZizxI3xpHdWF+Dg9M5GPOsM8MuwcWt1WMaaDBJEbVIaStChtBkzG7zaCvXJSjYGJyo26IKlvkd2Cp90bdJYvaqIfBzBh1w+7eq4elNtz1Peao2GEzsNiMdpeOtSyN+2zDzfLONDWHd6nRlzjMt6ZrQOM1qfZaFlRzDrayzgsWtFSO+l4HehV4e6sPBnCCfjPqDuFMpGrVFLa34RsKNLZOMQYmJtXsxFc5+NrE6ciG1GbVXtizwDtpUjX8PU3Tfx1+MThLBkDFLVwPKL91d5ux+aHK9Eqb4Xn53XO7Dhd1al69vCimW+Djgks6f0F9vvgZpF/iV/GSe5iUvoDZ1nJnfRn0q/Y2v9RofOr8R6zLVdgou+pry9/OnD7PrrvMwyLblpXJxbrco8cNezmdpoj4wdFG2afcD/luJRkH9vmF7gS5lcwnSFOU56DfVfUp3vMr+UPmtuTbUBdll0EcLDi5XJxzG1+85IgLrnDqFsqeGT426uXBb6XtrcruXs0zd7vFgK99/htZz5C61NzVEQRBEARBEARBEAT5+3wCxFIVE6n7UysAAAAASUVORK5CYII=" height="50px">
+          </div>
+          <h3 class="title"><a href>Magni Dolores</a></h3>
+          <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi
+            sint occaecati cupiditate non provident</p>
+        </div>
+      </div>
+      <div class="bounce">
+        <div class="box">
+          <div class="icon">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHsAAAB7CAMAAABjGQ9NAAAAZlBMVEX///8AAADj4+OPj483Nzfu7u76+vr39/fExMQ0NDTY2Nje3t4qKioYGBhubm6urq68vLx1dXWdnZ2VlZVRUVE+Pj4lJSWIiIhKSkpoaGjQ0NCCgoJgYGAvLy+0tLRYWFgNDQ0eHh5NxlUvAAACbElEQVRoge2Y23arIBBAlYoa4yXmVq+x/v9PVhsGJRFoeoCe1TX7MbJmZwYYQc9DEARBEARBEARBEOS/JSJJkuypcy+N2+GSjll2Daq8IKE7c1x++AJd4ch+CPwNjg6KT/It80QQ21bfJOaZNrJpDt8V6il1m3WX1duBXFR/VHWZD6nwW2ZLflpJ+rah0bSxIkqO1er3ys6cxyuFuKPiy/Lk3YY6WuLnT8kVS7M5WHC/LUlvPG1GeHo1r95z9W37+VX11/4NvsZPkgEJT9z0WicZizxI3xpHdWF+Dg9M5GPOsM8MuwcWt1WMaaDBJEbVIaStChtBkzG7zaCvXJSjYGJyo26IKlvkd2Cp90bdJYvaqIfBzBh1w+7eq4elNtz1Peao2GEzsNiMdpeOtSyN+2zDzfLONDWHd6nRlzjMt6ZrQOM1qfZaFlRzDrayzgsWtFSO+l4HehV4e6sPBnCCfjPqDuFMpGrVFLa34RsKNLZOMQYmJtXsxFc5+NrE6ciG1GbVXtizwDtpUjX8PU3Tfx1+MThLBkDFLVwPKL91d5ux+aHK9Eqb4Xn53XO7Dhd1al69vCimW+Djgks6f0F9vvgZpF/iV/GSe5iUvoDZ1nJnfRn0q/Y2v9RofOr8R6zLVdgou+pry9/OnD7PrrvMwyLblpXJxbrco8cNezmdpoj4wdFG2afcD/luJRkH9vmF7gS5lcwnSFOU56DfVfUp3vMr+UPmtuTbUBdll0EcLDi5XJxzG1+85IgLrnDqFsqeGT426uXBb6XtrcruXs0zd7vFgK99/htZz5C61NzVEQRBEARBEARBEAT5+3wCxFIVE6n7UysAAAAASUVORK5CYII=" height="50px">
+          </div>
+          <h3 class="title"><a href>Nemo Enim</a></h3>
+          <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi
+            sint occaecati cupiditate non provident</p>
+        </div>
+      </div>
+      <div class="bounce">
+        <div class="box">
+          <div class="icon">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHsAAAB7CAMAAABjGQ9NAAAAZlBMVEX///8AAADj4+OPj483Nzfu7u76+vr39/fExMQ0NDTY2Nje3t4qKioYGBhubm6urq68vLx1dXWdnZ2VlZVRUVE+Pj4lJSWIiIhKSkpoaGjQ0NCCgoJgYGAvLy+0tLRYWFgNDQ0eHh5NxlUvAAACbElEQVRoge2Y23arIBBAlYoa4yXmVq+x/v9PVhsGJRFoeoCe1TX7MbJmZwYYQc9DEARBEARBEARBEOS/JSJJkuypcy+N2+GSjll2Daq8IKE7c1x++AJd4ch+CPwNjg6KT/It80QQ21bfJOaZNrJpDt8V6il1m3WX1duBXFR/VHWZD6nwW2ZLflpJ+rah0bSxIkqO1er3ys6cxyuFuKPiy/Lk3YY6WuLnT8kVS7M5WHC/LUlvPG1GeHo1r95z9W37+VX11/4NvsZPkgEJT9z0WicZizxI3xpHdWF+Dg9M5GPOsM8MuwcWt1WMaaDBJEbVIaStChtBkzG7zaCvXJSjYGJyo26IKlvkd2Cp90bdJYvaqIfBzBh1w+7eq4elNtz1Peao2GEzsNiMdpeOtSyN+2zDzfLONDWHd6nRlzjMt6ZrQOM1qfZaFlRzDrayzgsWtFSO+l4HehV4e6sPBnCCfjPqDuFMpGrVFLa34RsKNLZOMQYmJtXsxFc5+NrE6ciG1GbVXtizwDtpUjX8PU3Tfx1+MThLBkDFLVwPKL91d5ux+aHK9Eqb4Xn53XO7Dhd1al69vCimW+Djgks6f0F9vvgZpF/iV/GSe5iUvoDZ1nJnfRn0q/Y2v9RofOr8R6zLVdgou+pry9/OnD7PrrvMwyLblpXJxbrco8cNezmdpoj4wdFG2afcD/luJRkH9vmF7gS5lcwnSFOU56DfVfUp3vMr+UPmtuTbUBdll0EcLDi5XJxzG1+85IgLrnDqFsqeGT426uXBb6XtrcruXs0zd7vFgK99/htZz5C61NzVEQRBEARBEARBEAT5+3wCxFIVE6n7UysAAAAASUVORK5CYII=" height="50px">
+          </div>
+          <h3 class="title"><a href>Eiusmod Tempor</a></h3>
+          <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi
+            sint occaecati cupiditate non provident</p>
+        </div>
+      </div>
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+ <section id="features">
+   <div class="wrap">
+     <div class="volu">
+       <div class="girl">
+         <img src="https://bootstrapmade.com/demo/themes/Rapid/img/features-1.svg" class="pooka" alt="PooKa">
+       </div>
+      <div class="volup">
+        <h2>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h2>
+        <p>Ipsum in aspernatur ut possimus sint. Quia omnis est occaecati possimus ea. Quas molestiae perspiciatis
+          occaecati qui rerum. Deleniti quod porro sed quisquam saepe. Numquam mollitia recusandae non ad at et a.</p>
+        <p>Ad vitae recusandae odit possimus. Quaerat cum ipsum corrupti. Odit qui asperiores ea corporis deserunt
+          veritatis quidem expedita perferendis. Qui rerum eligendi ex doloribus quia sit. Porro rerum eum eum.</p>
+      </div>
+     </div>
+    <div class="low">
+      <div class="neque">
+        <h2>Neque saepe temporibus repellat ea ipsum et. Id vel et quia tempora facere reprehenderit.</h2>
+        <p>Delectus alias ut incidunt delectus nam placeat in consequatur. Sed cupiditate quia ea quis. Voluptas nemo
+          qui aut distinctio. Cumque fugit earum est quam officiis numquam. Ducimus corporis autem at blanditiis beatae
+          incidunt sunt.</p>
+        <p>Voluptas saepe natus quidem blanditiis. Non sunt impedit voluptas mollitia beatae. Qui esse molestias.
+          Laudantium libero nisi vitae debitis. Dolorem cupiditate est perferendis iusto.</p>
+        <p>Eum quia in. Magni quas ipsum a. Quis ex voluptatem inventore sint quia modi.
+          Numquam est aut fuga mollitia exercitationem nam accusantium provident quia.</p>
+      </div>
+      <div class="smartphone">
+        <img src="https://bootstrapmade.com/demo/themes/Rapid/img/features-2.svg" class="iphone" alt="smartphone">
+      </div>
+    </div>
+   </div>
+ </section>
+
+
+
+<footer id="footer">
+  <div class="wrap">
+    <div class="copy">
+      &copy; Copyright Rapid. All Rights Reserved
+    </div>
+    <div class="design">Designed by
+      <a href="https://bootstrapmade.com">Bootstrapmade</a>
+    </div>
+  </div>
+</footer>
+
+<a href="#"  class="back_to_top">^</a>
+</body>
+</html>
