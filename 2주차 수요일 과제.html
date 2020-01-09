@@ -22,8 +22,12 @@
   </script>
   <title>Document</title>
   <style>
+
+    .nav {
+        position: sticky;
+    }
     .nav-bar {
-        background-color:black;
+        background-color:navy;
         display:flex;
         top:0;
         left:0;
@@ -42,6 +46,8 @@
 
     .wrap {
         overflow: hidden;
+        width: 90%;
+        margin: 0 auto;
     }
 
     .6_yellow {
@@ -69,17 +75,16 @@
 
 
     .yellow_wrap {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 20px;
+
+
         float: left;
 
         margin:0 auto;
       }
 
     .yellow {
-        display: center;
-        justify-content: center;
+        align-items: center;
+        float: left;
     }
 
     .detail {
@@ -100,20 +105,32 @@
         padding:10px;
     }
 
+    .blue {
+        background-color: lightblue;
+      }
+
+    .footer {
+        padding-top: 30px;
+        padding-left: 80px;
+    }
+
   </style>
 
 </head>
 <body>
-<main class="wrap">
+
   <section class="nav">
-    <div class="nav-bar col-12">
-      <div class="in_the_nav sungmo">Navbar</div>
-      <div class="in_the_nav sungmo">Home</div>
-      <div class="in_the_nav">Features</div>
-      <div class="in_the_nav">Pricing</div>
-      <div class="in_the_nav">Dropdown link</div>
-    </div>
+
+      <div class="nav-bar col-12">
+        <div class="in_the_nav sungmo">Navbar</div>
+        <div class="in_the_nav sungmo">Home</div>
+        <div class="in_the_nav">Features</div>
+        <div class="in_the_nav">Pricing</div>
+        <div class="in_the_nav">Dropdown link</div>
+      </div>
+
   </section>
+<main class="wrap">
   <section class="coldplay">
     <div class="vivalavida col-md-10">
       <h1 class="viva">Viva La Vida</h1>
@@ -129,7 +146,7 @@
 
   <section class="6_yellow">
     <div class="yellow_wrap col-md-10">
-      <div class="yellow">
+      <div class="yellow col-lg-4 col-md-12">
         <h1>Yellow</h1>
         <h5>Look at the stars,
       Look how they shine for you,
@@ -146,7 +163,7 @@
         And it was all yellow</h5>
         <div class="detail">View details >></div>
       </div>
-      <div class="yellow">
+      <div class="yellow col-lg-4 col-md-12">
         <h1>Yellow</h1>
         <h5>Look at the stars,
       Look how they shine for you,
@@ -163,7 +180,7 @@
         And it was all yellow</h5>
         <div class="detail">View details >></div>
       </div>
-      <div class="yellow">
+      <div class="yellow col-lg-4 col-md-12">
         <h1>Yellow</h1>
         <h5>Look at the stars,
       Look how they shine for you,
@@ -180,7 +197,7 @@
         And it was all yellow</h5>
         <div class="detail">View details >></div>
       </div>
-      <div class="yellow">
+      <div class="yellow col-lg-4 col-md-12">
         <h1>Yellow</h1>
         <h5>Look at the stars,
       Look how they shine for you,
@@ -197,7 +214,7 @@
         And it was all yellow</h5>
         <div class="detail">View details >></div>
       </div>
-      <div class="yellow">
+      <div class="yellow col-lg-4 col-md-12">
         <h1>Yellow</h1>
         <h5>Look at the stars,
       Look how they shine for you,
@@ -214,7 +231,7 @@
         And it was all yellow</h5>
         <div class="detail">View details >></div>
       </div>
-      <div class="yellow">
+      <div class="yellow col-lg-4 col-md-12">
         <h1>Yellow</h1>
         <h5>Look at the stars,
       Look how they shine for you,
@@ -236,7 +253,7 @@
 
   <section class="9_list">
     <div class="flower col-md-2">
-      <div class="list">List</div>
+      <div class="list blue">List</div>
       <div class="list">List</div>
       <div class="list">List</div>
       <div class="list">List</div>
@@ -248,10 +265,12 @@
       <div class="list">List</div>
     </div>
   </section>
+
+
 </main>
 
   <footer class="footer">
-    <p>copy&; 2019 Pirogramming inc.</p>
+    <p>&copy; 2019 Pirogramming inc.</p>
   </footer>
 </body>
 </html>
